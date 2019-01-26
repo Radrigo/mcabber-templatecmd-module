@@ -1,0 +1,10 @@
+
+[[!meta title="mcabber-templatecmd"]]
+<a name="mcabber-templatecmd"></a>
+# Aliases on steroids for MCabber
+
+Module provides aliases with shell-like positional
+arguments substitution.
+
+[ [[!hg mcabber-templatecmd desc="SOURCE"]] ] [ [[README|readme]] ] [ [[TODO|todo]] ] [ [[RC|templatecmd.rc]] ]
+

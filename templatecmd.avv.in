@@ -1,0 +1,11 @@
+
+Name:        ${PROJECT_NAME}
+Method:      glib
+Version:     ${PROJECT_VERSION}
+Description: ${CPACK_PACKAGE_DESCRIPTION_SUMMARY}
+# commands depend on build environment: 4, 3, 2+1
+# compl depend on build environment: 3, 2+1
+Requires:    commands:4 + compl:3 + utils:2 + logprint:3
+Init:        tcmd_init
+Uninit:      tcmd_uninit
+

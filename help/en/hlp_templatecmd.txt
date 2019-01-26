@@ -1,0 +1,28 @@
+
+ /TEMPLATECMD [command [= [template]]]
+
+Allows to define alias-commands, using templates.
+/templatecmd
+ Prints list of current template commands.
+/templatecmd command
+ Prints template, corresponding to specified command.
+/templatecmd command =
+ Destroys command.
+/templatecmd command = template
+ Defines new template command.
+ Template may contain next special sequences:
+  - $$  will be replaced with just $;
+  - $*  will be replaced with all templatecmd args;
+  - $0  will be replaced with templatecmd name;
+  - $n  will be replaced with corresponding positional argument from command line.
+
+Note: last detected argument will not be stripped from quotes and will contain all end of argument line.
+
+Examples:
+ * /templatecmd a = echo $2 $1 $5
+   then "/a 1 2 3" will print "2 1"
+   but "/a 1 2 3 4 5 6 7" will print "2 1 5 6 7".
+ * /templatecmd b = echo $0 $*
+   then "/b a b c d" will print "b a b c d"
+
+Note: be careful not to cause endless loops!

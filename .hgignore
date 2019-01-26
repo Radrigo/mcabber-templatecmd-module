@@ -1,0 +1,8 @@
+# ignore rcs backups
+\.orig$
+\.rej$
+# ignore backup files
+~$
+\.swp$
+# ignore build dir
+^build$

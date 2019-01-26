@@ -1,0 +1,8 @@
+
+#ifndef LOCAL_CONFIG_H
+#define LOCAL_CONFIG_H
+
+#define PROJECT_VERSION ( "${PROJECT_VERSION}" )
+
+#endif
+

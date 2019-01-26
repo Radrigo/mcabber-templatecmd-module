@@ -1,0 +1,55 @@
+
+# Aliases on steroids for MCabber
+
+This module provides more flexible aliases with shell-like positional
+argument substitution. For detailed explanation see help file for
+command 'templatecmd', provided by this module. This command is marked
+as safe for use in your mcabberrc (of course, after you loaded this
+module).
+
+Example:
+
+    module load templatecmd
+    templatecmd cat = say_to -f $1 .
+
+# Installation
+
+To install it, you need:
+
+ * mcabber headers
+ * glib
+ * loudmouth
+ * cmake
+ * make
+ * c compiler (gcc)
+ * linker (binutils)
+
+Then do:
+
+    $ mkdir build
+    $ cd build
+    $ cmake ..
+    $ make edit_cache
+    $ make
+    # make install
+
+Debian users can instead of make install do:
+
+    $ make package
+    # dpkg -i libmcabber-templatecmd_*.deb
+
+Users of other distributions can select appropriate package generator,
+using cache editor.
+
+# License
+
+This code underlies terms of GNU GPL v2 or later. You can find it in
+file COPYING from this distribution or on a GNU web-site
+<http://www.gnu.org/licenses/>.
+
+# Contact
+
+I will be happy to get feedback, patches, suggestions, etc.
+You can send me email or contact via jabber <isbear@unixzone.org.ua>.
+
+  -- Myhailo Danylenko <isbear@ukrpost.net>

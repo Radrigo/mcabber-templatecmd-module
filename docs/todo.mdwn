@@ -1,0 +1,5 @@
+
++ some way to set up commands at startup
+* double-free lurks in module uninitialization
+* use var-parser?
+
